@@ -46,12 +46,12 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    host:true, 
+    host:true,
     proxy: {
-      '^/api*': { 
-        target: 'http://localhost:8080/' ,
+      '^/api*': {
+        target: 'http://172.16.193.254:9000/' ,
        changeOrigin: false,
-    },   
+    },
   }
   },
   base:"/"
